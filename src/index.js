@@ -5,6 +5,9 @@
  Напишите аналог встроенного метода forEach для работы с массивами
  */
 function forEach(array, fn) {
+    for (var i=0; i<array.length; i++) {
+        fn(array[i], i, array);
+    }
 }
 
 /*
@@ -12,13 +15,30 @@ function forEach(array, fn) {
  Напишите аналог встроенного метода map для работы с массивами
  */
 function map(array, fn) {
+    var result = [];
+
+    for (var i=0; i<array.length; i++) {
+        result.push(fn(array[i], i, array));
+    }
+
+    return result;
 }
 
 /*
  Задача 3:
  Напишите аналог встроенного метода reduce для работы с массивами
  */
+
 function reduce(array, fn, initial) {
+    var i = 0;
+    var result = initial || array[i++];
+
+    while (i < array.length) {
+        result = fn(result, array[i], i, array);
+        i++;
+    }
+
+    return result;
 }
 
 /*
@@ -27,6 +47,8 @@ function reduce(array, fn, initial) {
  Функция должна удалить указанное свойство из указанного объекта
  */
 function deleteProperty(obj, prop) {
+    delete obj[prop];
+
 }
 
 /*
@@ -35,6 +57,7 @@ function deleteProperty(obj, prop) {
  Функция должна проверить существует ли укзаанное свойство в указанном объекте
  */
 function hasProperty(obj, prop) {
+    return obj.hasOwnProperty(prop);
 }
 
 /*
@@ -42,6 +65,7 @@ function hasProperty(obj, prop) {
  Функция должна получить все перечисляемые свойства объекта и вернуть их в виде массива
  */
 function getEnumProps(obj) {
+    return Object.keys(obj);
 }
 
 /*
@@ -49,13 +73,31 @@ function getEnumProps(obj) {
  Функция должна перебрать все свойства объекта, преобразовать их имена в верхний регистра и вернуть в виде массива
  */
 function upperProps(obj) {
+    var result = [];
+
+    for (var item in obj) {
+        result.push(item.toUpperCase());
+    }
+
+    return result;
 }
 
 /*
  Задача 8 *:
  Напишите аналог встроенного метода slice для работы с массивами
  */
-function slice(array, from, to) {
+function slice(array, from = 0, to = array.length) {
+    var result = [];
+
+    if (from < 0) {
+        from = array.length - Math.abs(from);
+    }
+
+    for (var i = from; i<=to; i++) {
+        result.push(array[i]);
+    }
+
+    return result;
 }
 
 /*
