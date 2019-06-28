@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="where">
+        <div class="ppp"><p>123456</p></div>
+        <p>212121</p>
+        <span>dfksdgsgd</span>sdsdf
+        <p></p>
+        <div>
+            <p>123123</p>
+            <h1>dvgsdgsdfsdf</h1>
+        </div>
+    </div>
+    <script>
+        function deleteTextNodesRecursive(where) {
+
+            for (var i = 0; i < where.childNodes.length; i++) {
+                var child = where.childNodes[i];
+
+                if (child.nodeType === 3) {
+                    where.removeChild(child);
+                    i--;
+                } else if (child.nodeType === 1) {
+                    deleteTextNodesRecursive(child);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

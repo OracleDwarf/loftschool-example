@@ -1,0 +1,170 @@
+
+> loftschool-example@1.0.0 test C:\study\JS\loft\loftschool-example
+> karma start
+
+
+START:
+[34mi[39m [90m｢wdm｣[39m: 
+[34mi[39m [90m｢wdm｣[39m: Compiled successfully.
+[34mi[39m [90m｢wdm｣[39m: Compiling...
+[34mi[39m [90m｢wdm｣[39m: 
+[34mi[39m [90m｢wdm｣[39m: Compiled successfully.
+[32m28 06 2019 10:37:32.639:INFO [karma-server]: [39mKarma v3.1.1 server started at http://0.0.0.0:9876/
+[32m28 06 2019 10:37:32.648:INFO [launcher]: [39mLaunching browsers ChromeHeadless with concurrency unlimited
+[32m28 06 2019 10:37:32.748:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m28 06 2019 10:37:34.056:INFO [HeadlessChrome 0.0.0 (Windows 7 0.0.0)]: [39mConnected on socket 92T3J2apiLZxeJJQAAAA with id 20005221
+  ДЗ 4 - Работа с DOM
+    observeChildNodes
+      × должна вызывать fn при добавлении элементов в указанный элемент
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM observeChildNodes должна вызывать fn при добавлении элементов в указанный элемент FAILED
+	Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      × должна вызывать fn при добавлении множества элементов в указанный элемент
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM observeChildNodes должна вызывать fn при добавлении множества элементов в указанный элемент FAILED
+	Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      × должна вызывать fn при удалении элементов из указанного элемента
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM observeChildNodes должна вызывать fn при удалении элементов из указанного элемента FAILED
+	Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      × должна вызывать fn при удалении множества элементов из указанного элемента
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM observeChildNodes должна вызывать fn при удалении множества элементов из указанного элемента FAILED
+	Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+    createDivWithText
+      × должна возвращать элемент с тегом DIV
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM createDivWithText должна возвращать элемент с тегом DIV FAILED
+	AssertionError: expected 'N%22zxX%2F_k%3DO' to be an instance of Element
+	    at Context.<anonymous> (webpack:///test/index.js:31:19 <- test/index.js:11528:51)
+      × должна добавлять текст в элемент
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM createDivWithText должна добавлять текст в элемент FAILED
+	AssertionError: expected undefined to equal 'g%23!1%22P'
+	    at Context.<anonymous> (webpack:///test/index.js:39:19 <- test/index.js:11534:51)
+    createAWithHref
+      × должна возвращать элемент с тегом A
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM createAWithHref должна возвращать элемент с тегом A FAILED
+	AssertionError: expected undefined to be an instance of Element
+	    at Context.<anonymous> (webpack:///test/index.js:48:19 <- test/index.js:11541:51)
+      × должна добавлять атрибут href
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM createAWithHref должна добавлять атрибут href FAILED
+	TypeError: Cannot read property 'getAttribute' of undefined
+	    at Context.<anonymous> (webpack:///test/index.js:56:32 <- test/index.js:11547:64)
+    prepend
+      × должна добавлять элемент в начало
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM prepend должна добавлять элемент в начало FAILED
+	TypeError: Cannot read property 'prepend' of undefined
+	    at prepend (webpack:///src/index.js:34:17 <- test/index.js:11489:20584)
+	    at Context.<anonymous> (webpack:///test/index.js:70:20 <- test/index.js:11558:65)
+    findAllPSiblings
+      × должна возвращать массив с элементами, соседями которых являются P
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM findAllPSiblings должна возвращать массив с элементами, соседями которых являются P FAILED
+	AssertionError: expected false to be true
+	    at Context.<anonymous> (webpack:///test/index.js:85:19 <- test/index.js:11569:51)
+    findError
+      × должна возвращать массив из текстового содержимого элементов
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM findError должна возвращать массив из текстового содержимого элементов FAILED
+	AssertionError: expected [ Array(5) ] to deeply equal [ Array(2) ]
+	    at Context.<anonymous> (webpack:///test/index.js:101:19 <- test/index.js:11582:51)
+    deleteTextNodes
+      × должна удалить все текстовые узлы
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM deleteTextNodes должна удалить все текстовые узлы FAILED
+	AssertionError: expected ' <div></div>)0xt%40%3F_(<p></p>qB%3Clt*uB%3Es' to equal '<div></div><p></p>'
+	    at Context.<anonymous> (webpack:///test/index.js:112:19 <- test/index.js:11590:51)
+    deleteTextNodesRecursive
+      × должна рекурсивно удалить все текстовые узлы
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM deleteTextNodesRecursive должна рекурсивно удалить все текстовые узлы FAILED
+	AssertionError: expected '<span> <div> <b>CLf%3AzD8</b> </div> <p>%23y1oxOZ</p> %5CnX*</span>' to equal '<span><div><b></b></div><p></p></span>'
+	    at Context.<anonymous> (webpack:///test/index.js:126:19 <- test/index.js:11601:51)
+    collectDOMStat
+      × должна вернуть статистику по переданному дереву
+HeadlessChrome 0.0.0 (Windows 7 0.0.0) ДЗ 4 - Работа с DOM collectDOMStat должна вернуть статистику по переданному дереву FAILED
+	AssertionError: expected undefined to deeply equal { Object (tags, classes, ...) }
+	    at Context.<anonymous> (webpack:///test/index.js:146:19 <- test/index.js:11624:51)
+
+Finished in 8.128 secs / 8.02 secs @ 10:37:42 GMT+0300 (GMT+03:00)
+
+SUMMARY:
+√ 0 tests completed
+× 14 tests failed
+
+FAILED TESTS:
+  ДЗ 4 - Работа с DOM
+    observeChildNodes
+      × должна вызывать fn при добавлении элементов в указанный элемент
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+
+      × должна вызывать fn при добавлении множества элементов в указанный элемент
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+
+      × должна вызывать fn при удалении элементов из указанного элемента
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+
+      × должна вызывать fn при удалении множества элементов из указанного элемента
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+
+    createDivWithText
+      × должна возвращать элемент с тегом DIV
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      AssertionError: expected 'N%22zxX%2F_k%3DO' to be an instance of Element
+          at Context.<anonymous> (webpack:///test/index.js:31:19 <- test/index.js:11528:51)
+
+      × должна добавлять текст в элемент
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      AssertionError: expected undefined to equal 'g%23!1%22P'
+          at Context.<anonymous> (webpack:///test/index.js:39:19 <- test/index.js:11534:51)
+
+    createAWithHref
+      × должна возвращать элемент с тегом A
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      AssertionError: expected undefined to be an instance of Element
+          at Context.<anonymous> (webpack:///test/index.js:48:19 <- test/index.js:11541:51)
+
+      × должна добавлять атрибут href
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      TypeError: Cannot read property 'getAttribute' of undefined
+          at Context.<anonymous> (webpack:///test/index.js:56:32 <- test/index.js:11547:64)
+
+    prepend
+      × должна добавлять элемент в начало
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      TypeError: Cannot read property 'prepend' of undefined
+          at prepend (webpack:///src/index.js:34:17 <- test/index.js:11489:20584)
+          at Context.<anonymous> (webpack:///test/index.js:70:20 <- test/index.js:11558:65)
+
+    findAllPSiblings
+      × должна возвращать массив с элементами, соседями которых являются P
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      AssertionError: expected false to be true
+          at Context.<anonymous> (webpack:///test/index.js:85:19 <- test/index.js:11569:51)
+
+    findError
+      × должна возвращать массив из текстового содержимого элементов
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      AssertionError: expected [ Array(5) ] to deeply equal [ Array(2) ]
+          at Context.<anonymous> (webpack:///test/index.js:101:19 <- test/index.js:11582:51)
+
+    deleteTextNodes
+      × должна удалить все текстовые узлы
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      AssertionError: expected ' <div></div>)0xt%40%3F_(<p></p>qB%3Clt*uB%3Es' to equal '<div></div><p></p>'
+          at Context.<anonymous> (webpack:///test/index.js:112:19 <- test/index.js:11590:51)
+
+    deleteTextNodesRecursive
+      × должна рекурсивно удалить все текстовые узлы
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      AssertionError: expected '<span> <div> <b>CLf%3AzD8</b> </div> <p>%23y1oxOZ</p> %5CnX*</span>' to equal '<span><div><b></b></div><p></p></span>'
+          at Context.<anonymous> (webpack:///test/index.js:126:19 <- test/index.js:11601:51)
+
+    collectDOMStat
+      × должна вернуть статистику по переданному дереву
+        HeadlessChrome 0.0.0 (Windows 7 0.0.0)
+      AssertionError: expected undefined to deeply equal { Object (tags, classes, ...) }
+          at Context.<anonymous> (webpack:///test/index.js:146:19 <- test/index.js:11624:51)
+
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 9/9 )
+Branches     : 100% ( 0/0 )
+Functions    : 100% ( 9/9 )
+Lines        : 100% ( 9/9 )
+================================================================================
