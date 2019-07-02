@@ -6,7 +6,7 @@ import {
     emulateClick,
     delegate,
     once
-} from '../../../../[loftschool] Комплексное обучение JavaScript/08 События/1172_dz5/src/index';
+} from '../src/index';
 
 describe('ДЗ 5.1 - DOM Events', () => {
     describe('addListener', () => {
